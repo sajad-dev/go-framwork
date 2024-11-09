@@ -12,7 +12,7 @@ import (
 var Database *sql.DB
 
 func Connection() {
-	db, err := sql.Open("mysql",fmt.Sprintf( "%s:%s@tcp(%s:%s)/",setting.USERNAME,setting.PASSWORD,setting.IP,setting.PORT))
+	db, err := sql.Open("mysql",fmt.Sprintf("%s:%s@tcp(%s:%s)/",setting.USERNAME,setting.PASSWORD,setting.IP,setting.PORT))
 	exception.Log(err)
 
 	databasename := setting.DATABASE
