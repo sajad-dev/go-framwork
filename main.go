@@ -6,7 +6,6 @@ import (
 	"net/http"
 	"os"
 
-
 	"github.com/sajad-dev/go-framwork/App/websocket"
 	"github.com/sajad-dev/go-framwork/Config/setting"
 	"github.com/sajad-dev/go-framwork/Database/connection"
@@ -36,7 +35,7 @@ func main() {
 		fmt.Println(err)
 	}
 
-	if !setting.Debug {
+	if !setting.DEBUG {
 		defer log.Panicln("END PROGRAM")
 	}
 }
