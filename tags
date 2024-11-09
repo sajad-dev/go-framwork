@@ -1,0 +1,231 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accepted	App/validation/valid.go	/^func Accepted(value bool) string {$/;"	f
+ActiveURL	App/validation/valid.go	/^func ActiveURL(url string) string {$/;"	f
+AddTable	Database/migration/migration.go	/^func AddTable(strSlice string, table string) {$/;"	f
+Alpha	App/validation/valid.go	/^func Alpha(str string) string {$/;"	f
+AlphaNumeric	App/validation/valid.go	/^func AlphaNumeric(str string) string {$/;"	f
+ApiType	Route/api/api.go	/^type ApiType struct {$/;"	t
+Auth	App/middlewares/authenticationMiddelware.go	/^func Auth(next http.Handler) http.Handler {$/;"	f
+Auth	App/websocket/websocket.go	/^func Auth(next http.Handler) http.Handler {$/;"	f
+BigInt	Database/migration/migration_field.go	/^func BigInt(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Binary	Database/migration/migration_field.go	/^func Binary(name string, size int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Bit	Database/migration/migration_field.go	/^func Bit(name string, size int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Blob	App/validation/valid.go	/^type Blob struct {$/;"	t
+Blob	Database/migration/migration_field.go	/^func Blob(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Blob	Test-Utils/validutils.go	/^type Blob struct {$/;"	t
+Bool	Database/migration/migration_field.go	/^func Bool(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Boolean	App/validation/valid.go	/^func Boolean(value any) string {$/;"	f
+Boolean	Database/migration/migration_field.go	/^func Boolean(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Ch	Route/api/api.go	/^func Ch(w http.ResponseWriter, r *http.Request) {$/;"	f
+ChStruct	App/controllers/UserController.go	/^type ChStruct struct {$/;"	t
+Char	Database/migration/migration_field.go	/^func Char(name string, size int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+CheckMethod	Route/api/route.go	/^func CheckMethod(next http.Handler, method methodType) http.Handler {$/;"	f
+CommandType	Route/command/handel.go	/^type CommandType struct {$/;"	t
+Commands	Compile/main.go	/^func Commands() {$/;"	f
+Compile	Compile/main.go	/^func Compile() {$/;"	f
+ConfigWriterAndReader	App/middlewares/middlewares.go	/^func ConfigWriterAndReader(next http.Handler) http.Handler {$/;"	f
+Confirmed	App/validation/valid.go	/^func Confirmed(password, confirmedPassword string) string {$/;"	f
+Connaction	App/websocket/websocket.go	/^func Connaction(next http.Handler) http.Handler {$/;"	f
+ConnactionMap	App/websocket/websocket.go	/^var ConnactionMap = map[string]*websocket.Conn{}$/;"	v
+Connection	Database/connection/connection.go	/^func Connection() {$/;"	f
+Controller	App/websocket/websocket.go	/^func Controller(w http.ResponseWriter, r *http.Request) {$/;"	f
+CreateAll	Database/migration/migration.go	/^func CreateAll() {$/;"	f
+CreateTable	Database/migration/migration.go	/^func CreateTable(function string, table string) {$/;"	f
+CustomError	Exception/exception/type.go	/^type CustomError struct {$/;"	t
+DELETE	Route/api/route.go	/^	DELETE methodType = "DELETE"$/;"	c
+Database	Config/setting/setting.go	/^var Database string = "graham"/;"	v
+Database	Database/connection/connection.go	/^var Database *sql.DB$/;"	v
+Date	Database/migration/migration_field.go	/^func Date(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+DateTime	Database/migration/migration_field.go	/^func DateTime(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+DaynamicRoute	App/middlewares/middlewares.go	/^func DaynamicRoute(w http.ResponseWriter, r *http.Request, next http.Handler) {$/;"	f
+DaynamicRoute	Route/api/route.go	/^func DaynamicRoute(next http.Handler, pattern []string) http.Handler {$/;"	f
+Debug	Config/setting/setting.go	/^var Debug bool = true$/;"	v
+Decimal	Database/migration/migration_field.go	/^func Decimal(name string, size int, d int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Delete	Database/model/model.go	/^func Delete(table string, where [2]string) {$/;"	f
+Double	Database/migration/migration_field.go	/^func Double(name string, size int, d int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+DropTable	Database/migration/migration.go	/^func DropTable() {$/;"	f
+Email	App/validation/valid.go	/^func Email(email string) string {$/;"	f
+Enum	Database/migration/migration_field.go	/^func Enum(name string, values []string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Extension	App/validation/valid.go	/^func Extension(blob *Blob, allowedExtensions []string) string {$/;"	f
+File	App/validation/valid.go	/^func File(blob *Blob) string {$/;"	f
+Float	Database/migration/migration_field.go	/^func Float(name string, size int, d int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+ForgetPassord	App/controllers/AuthenticationController.go	/^func ForgetPassord(w http.ResponseWriter, r *http.Request) {$/;"	f
+Forgin	Database/migration/migration_field.go	/^func Forgin(name string,table string, nullable bool, tableForgin string, field_table string, cascade_ondelete string, cascade_onupdate string) string {$/;"	f
+GET	Route/api/route.go	/^	GET    methodType = "GET"$/;"	c
+GenerateToken	App/utils/utils.go	/^func GenerateToken() string {$/;"	f
+Get	App/controllers/UserController.go	/^func Get(w http.ResponseWriter, r *http.Request) {$/;"	f
+Get	Database/model/model.go	/^func Get(selection []string, table string, where []Where_st, order string, asc bool) GetOutput {$/;"	f
+GetDYRoute	Route/api/route.go	/^func GetDYRoute(pattern string) ([]string, string) {$/;"	f
+GetFromFunc	Test-Utils/databaseutils.go	/^func GetFromFunc(function string) []string {$/;"	f
+GetOutput	Database/model/model.go	/^type GetOutput []map[string]string$/;"	t
+GetToken	App/controllers/controller.go	/^func GetToken(selection []string, email string, password string) (string,map[string]string, bool) {$/;"	f
+Handel	App/validation/validation.go	/^func Handel(form map[string]string,w http.ResponseWriter) bool {$/;"	f
+Handel	App/websocket/websocket.go	/^func Handel() {$/;"	f
+Handel	Database/migration/migration.go	/^func Handel() {$/;"	f
+Handel	Route/command/handel.go	/^func Handel(args []string) {$/;"	f
+HandelCheckTable	Database/migration/migration.go	/^func HandelCheckTable() {$/;"	f
+HandelMiddleware	App/middlewares/middlewares.go	/^func (e MiddlewaresType) HandelMiddleware(next http.Handler) http.Handler {$/;"	f
+HandelUpdate	Database/migration/migration.go	/^func HandelUpdate(field string, fieldtype string, collection sql.NullString, null string, defult sql.NullString, key string, extera string, privileges string, comment string, function string, table string, x int) {$/;"	f
+Handler	App/middlewares/middlewares.go	/^func Handler(middlewares []func(http.Handler) http.Handler, finaly http.Handler) http.Handler {$/;"	f
+HashPassword	App/utils/utils.go	/^func HashPassword(password string) string {$/;"	f
+IP	App/validation/valid.go	/^func IP(ip string) string {$/;"	f
+Insert	Database/model/model.go	/^func Insert(data map[string]string, table string) {$/;"	f
+Int	Database/migration/migration_field.go	/^func Int(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+IntPrimary	Database/migration/migration.go	/^func IntPrimary(name string, increment bool) string {$/;"	f
+IsValid	App/utils/utils.go	/^func IsValid(str string) bool {$/;"	f
+Log	Exception/exception/exception.go	/^func Log(err error) {$/;"	f
+Login	App/controllers/AuthenticationController.go	/^func Login(w http.ResponseWriter, r *http.Request) {$/;"	f
+LongBlob	Database/migration/migration_field.go	/^func LongBlob(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+LongText	Database/migration/migration_field.go	/^func LongText(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+MIMEType	App/validation/valid.go	/^func MIMEType(blob *Blob, allowedTypes []string) string {$/;"	f
+Max	App/validation/valid.go	/^func Max(str string, maxLength int) string {$/;"	f
+MaxSize	App/validation/valid.go	/^func MaxSize(blob *Blob, maxSize int) string {$/;"	f
+MediumBlob	Database/migration/migration_field.go	/^func MediumBlob(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+MediumInt	Database/migration/migration_field.go	/^func MediumInt(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+MediumText	Database/migration/migration_field.go	/^func MediumText(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Message	App/validation/message.go	/^var Message = map[string]string{$/;"	v
+MessageHandel	App/websocket/websocket.go	/^func MessageHandel(next http.Handler) http.Handler {$/;"	f
+MiddlewaresListType	Route/api/api.go	/^type MiddlewaresListType []func(http.Handler) http.Handler$/;"	t
+MiddlewaresType	App/middlewares/middlewarestype.go	/^type MiddlewaresType func(w http.ResponseWriter, r *http.Request, next http.Handler)$/;"	t
+Mig	Database/migration/migration.go	/^type Mig struct{}$/;"	t
+Mig	Test-Utils/databaseutils.go	/^type Mig struct{}$/;"	t
+MiggarionListAppend	Database/migration/migration.go	/^func MiggarionListAppend() {$/;"	f
+MiggarionListAppend	Test-Utils/databaseutils.go	/^func MiggarionListAppend() ([]string, []string) {$/;"	f
+Migrate	Database/migration/migration.go	/^type Migrate struct {$/;"	t
+MigrateList	Database/migration/migration.go	/^var MigrateList []Migrate$/;"	v
+MigrationInterface	Database/migration/kernel.go	/^type MigrationInterface interface {$/;"	t
+Min	App/validation/valid.go	/^func Min(str string, minLength int) string {$/;"	f
+Numeric	App/validation/valid.go	/^func Numeric(value string) string {$/;"	f
+PATCH	Route/api/route.go	/^	PATCH  methodType = "PATCH"$/;"	c
+POST	Route/api/route.go	/^	POST   methodType = "GET"$/;"	c
+PUT	Route/api/route.go	/^	PUT    methodType = "PUT"$/;"	c
+Phone	App/validation/valid.go	/^func Phone(phone string) string {$/;"	f
+ReatPassword	App/controllers/AuthenticationController.go	/^func ReatPassword(w http.ResponseWriter, r *http.Request) {$/;"	f
+Register	App/controllers/AuthenticationController.go	/^func Register(w http.ResponseWriter, r *http.Request) {$/;"	f
+RemoveToken	App/controllers/controller.go	/^func RemoveToken() {$/;"	f
+Required	App/validation/valid.go	/^func Required(str any) string {$/;"	f
+Response404	Exception/exception/exception.go	/^func Response404(w http.ResponseWriter) {$/;"	f
+Response405	Exception/exception/exception.go	/^func Response405(w http.ResponseWriter) {$/;"	f
+Response500	Exception/exception/exception.go	/^func Response500(w http.ResponseWriter, exception string) {$/;"	f
+ResponseError	App/middlewares/authenticationMiddelware.go	/^func ResponseError(w http.ResponseWriter) {$/;"	f
+Route	Route/api/route.go	/^func Route(pattern string, method methodType, controller http.Handler, middlewaresList []func(http.Handler) http.Handler) {$/;"	f
+RouteAddFunc	Route/api/route.go	/^func RouteAddFunc(Controller func(w http.ResponseWriter, r *http.Request)) http.Handler {$/;"	f
+RouteList	Route/api/api.go	/^var RouteList = []ApiType{$/;"	v
+RouteRun	Route/api/route.go	/^func RouteRun() {$/;"	f
+Run	Compile/main.go	/^func Run() {$/;"	f
+Selection	Database/model/model.go	/^func Selection(selection []string, table string) string {$/;"	f
+Set	Database/migration/migration_field.go	/^func Set(name string, values []string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+SmallInt	Database/migration/migration_field.go	/^func SmallInt(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Sqltype	Database/model/model.go	/^type Sqltype string$/;"	t
+StringVar	Database/migration/migration.go	/^func StringVar(name string, max int) string {$/;"	f
+StructRegistry	App/controllers/UserController.go	/^var StructRegistry = map[string]interface{}{$/;"	v
+TestAccepted	Test-Utils/validutils.go	/^func TestAccepted() (string, string) {$/;"	f
+TestActiveURL	Test-Utils/validutils.go	/^func TestActiveURL() (string, string) {$/;"	f
+TestAlpha	Test-Utils/validutils.go	/^func TestAlpha() (string, string) {$/;"	f
+TestAlphaNumeric	Test-Utils/validutils.go	/^func TestAlphaNumeric() (string, string) {$/;"	f
+TestApi	Test/route_test.go	/^func TestApi(t *testing.T) {$/;"	f
+TestBoolean	Test-Utils/validutils.go	/^func TestBoolean() (string, string) {$/;"	f
+TestConfirmed	Test-Utils/validutils.go	/^func TestConfirmed() (string, string) {$/;"	f
+TestEmail	Test-Utils/validutils.go	/^func TestEmail() (string, string) {$/;"	f
+TestFunc	App/validation/validation.go	/^type TestFunc func() (string, string)$/;"	t
+TestFunc	Test-Utils/validutils.go	/^type TestFunc func() (string, string)$/;"	t
+TestFuncWithArgs	Test-Utils/validutils.go	/^type TestFuncWithArgs func(int) (string, string)$/;"	t
+TestIP	Test-Utils/validutils.go	/^func TestIP() (string, string) {$/;"	f
+TestMap	Test-Utils/validutils.go	/^var TestMap = map[string]TestFunc{$/;"	v
+TestMapWithArgs	Test-Utils/validutils.go	/^var TestMapWithArgs = map[string]TestFuncWithArgs{$/;"	v
+TestMax	Test-Utils/validutils.go	/^func TestMax(num int) (string, string) {$/;"	f
+TestMigrationTables	Test/database_test.go	/^func TestMigrationTables(t *testing.T) {$/;"	f
+TestMigrationTablesParams	Test/database_test.go	/^func TestMigrationTablesParams(t *testing.T) {$/;"	f
+TestMin	Test-Utils/validutils.go	/^func TestMin(num int) (string, string) {$/;"	f
+TestNumeric	Test-Utils/validutils.go	/^func TestNumeric() (string, string) {$/;"	f
+TestPhone	Test-Utils/validutils.go	/^func TestPhone() (string, string) {$/;"	f
+TestRequired	Test-Utils/validutils.go	/^func TestRequired() (string, string) {$/;"	f
+TestURL	Test-Utils/validutils.go	/^func TestURL() (string, string) {$/;"	f
+Text	Database/migration/migration_field.go	/^func Text(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Time	Database/migration/migration_field.go	/^func Time(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Timestamp	Database/migration/migration_field.go	/^func Timestamp(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+TinyBlob	Database/migration/migration_field.go	/^func TinyBlob(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+TinyInt	Database/migration/migration_field.go	/^func TinyInt(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+TinyText	Database/migration/migration_field.go	/^func TinyText(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+URL	App/validation/valid.go	/^func URL(url string) string {$/;"	f
+Unique	App/validation/valid-in-database.go	/^func Unique(str string, field string, table string) string {$/;"	f
+Update	Database/model/model.go	/^func Update(data map[string]string, table string, where [2]string) {$/;"	f
+UpdateTable	Database/migration/migration.go	/^func UpdateTable(table string, column_name_old string, parametr string) {$/;"	f
+Validate	App/controllers/AuthenticationController.go	/^func Validate(val string) error {$/;"	f
+ValidationFuncs	App/validation/validation.go	/^var ValidationFuncs = map[string]func(...interface{}) string{$/;"	v
+Varbinary	Database/migration/migration_field.go	/^func Varbinary(name string, size int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+Varchar	Database/migration/migration_field.go	/^func Varchar(name string, size int, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+WelcomeController	App/controllers/WelcomeController.go	/^func WelcomeController(w http.ResponseWriter, r *http.Request) {$/;"	f
+WelcomeControllerGet	App/controllers/WelcomeController.go	/^func WelcomeControllerGet(w http.ResponseWriter, r *http.Request) {$/;"	f
+Where	Database/model/model.go	/^func Where(where []Where_st) string {$/;"	f
+Where_st	Database/model/model.go	/^type Where_st struct {$/;"	t
+Year	Database/migration/migration_field.go	/^func Year(name string, nullable bool, defaultValue string, isUnique bool, isPrimaryKey bool) string {$/;"	f
+_	Test/database_test.go	/^var db, _ = sql.Open("mysql", "root:sajad@tcp(127.0.0.1:3306)\/"+"graham")$/;"	v
+_MigrationInterface	Database/migration/migration.go	/^var _MigrationInterface = (*Migrate)(nil)$/;"	v
+api	Route/api/api.go	/^package api$/;"	p
+api	Route/api/route.go	/^package api$/;"	p
+build	Compile/main.go	/^func build() {$/;"	f
+command	Route/command/handel.go	/^package command$/;"	p
+command	Route/command/handel.go	/^var command = []CommandType{$/;"	v
+command	Route/command/migration.go	/^package command$/;"	p
+connection	Database/connection/connection.go	/^package connection$/;"	p
+controllers	App/controllers/AuthenticationController.go	/^package controllers$/;"	p
+controllers	App/controllers/UserController.go	/^package controllers$/;"	p
+controllers	App/controllers/WelcomeController.go	/^package controllers$/;"	p
+controllers	App/controllers/controller.go	/^package controllers$/;"	p
+db	Test/database_test.go	/^var db, _ = sql.Open("mysql", "root:sajad@tcp(127.0.0.1:3306)\/"+"graham")$/;"	v
+defaultValueConstraint	Database/migration/migration_field.go	/^func defaultValueConstraint(value string, nullable bool) string {$/;"	f
+exception	Exception/exception/exception.go	/^package exception$/;"	p
+exception	Exception/exception/type.go	/^package exception$/;"	p
+getFromFunc	Database/migration/migration.go	/^func getFromFunc(function string) []string {$/;"	f
+getOrder	Database/model/model.go	/^func getOrder(by string, asc bool) string {$/;"	f
+getStar	Database/model/model.go	/^func getStar(selection []string) string {$/;"	f
+getWhere	Database/model/model.go	/^func getWhere(where []Where_st) string {$/;"	f
+isValidEmail	App/validation/valid.go	/^func isValidEmail(email string) bool {$/;"	f
+isValidURL	App/validation/valid.go	/^func isValidURL(url string) bool {$/;"	f
+joinValues	Database/migration/migration_field.go	/^func joinValues(values []string) string {$/;"	f
+killProcess	Compile/main.go	/^func killProcess() {$/;"	f
+letters	Test-Utils/validutils.go	/^var letters = []rune("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")$/;"	v
+logerr	Storage/logerr/logerr.go	/^package logerr/;"	p
+main	Compile/main.go	/^func main() {$/;"	f
+main	Compile/main.go	/^package main$/;"	p
+main	main.go	/^func main() {$/;"	f
+main	main.go	/^package main$/;"	p
+main_test	Test/database_test.go	/^package main_test$/;"	p
+main_test	Test/route_test.go	/^package main_test$/;"	p
+methodType	Route/api/route.go	/^type methodType string$/;"	t
+middlewares	App/middlewares/authenticationMiddelware.go	/^package middlewares$/;"	p
+middlewares	App/middlewares/middlewares.go	/^package middlewares$/;"	p
+middlewares	App/middlewares/middlewarestype.go	/^package middlewares$/;"	p
+migration	Database/migration/kernel.go	/^package migration$/;"	p
+migration	Database/migration/migration.go	/^package migration$/;"	p
+migration	Database/migration/migration_field.go	/^package migration$/;"	p
+model	Database/model/model.go	/^package model$/;"	p
+mu	Compile/main.go	/^var mu sync.Mutex$/;"	v
+nullConstraint	Database/migration/migration_field.go	/^func nullConstraint(nullable bool) string {$/;"	f
+numbers	Test-Utils/validutils.go	/^var numbers = []rune("0123456789")$/;"	v
+primaryKeyConstraint	Database/migration/migration_field.go	/^func primaryKeyConstraint(isPrimaryKey bool) string {$/;"	f
+randomAlphaNumeric	Test-Utils/validutils.go	/^func randomAlphaNumeric(length int) string {$/;"	f
+randomEmail	Test-Utils/validutils.go	/^func randomEmail() string {$/;"	f
+randomIP	Test-Utils/validutils.go	/^func randomIP() string {$/;"	f
+randomNumeric	Test-Utils/validutils.go	/^func randomNumeric(length int) string {$/;"	f
+randomPhone	Test-Utils/validutils.go	/^func randomPhone() string {$/;"	f
+randomString	Test-Utils/validutils.go	/^func randomString(length int) string {$/;"	f
+randomURL	Test-Utils/validutils.go	/^func randomURL() string {$/;"	f
+setting	Config/setting/setting.go	/^package setting$/;"	p
+specialChars	Test-Utils/validutils.go	/^var specialChars = []rune("!@#$%^&*()")$/;"	v
+testutils	Test-Utils/databaseutils.go	/^package testutils$/;"	p
+testutils	Test-Utils/validutils.go	/^package testutils$/;"	p
+uniqueConstraint	Database/migration/migration_field.go	/^func uniqueConstraint(isUnique bool) string {$/;"	f
+upgrader	App/websocket/websocket.go	/^var upgrader = websocket.Upgrader{$/;"	v
+utils	App/utils/utils.go	/^package utils$/;"	p
+validation	App/validation/message.go	/^package validation$/;"	p
+validation	App/validation/valid-in-database.go	/^package validation$/;"	p
+validation	App/validation/valid.go	/^package validation$/;"	p
+validation	App/validation/validation.go	/^package validation$/;"	p
+websocket	App/websocket/websocket.go	/^package websocket$/;"	p
