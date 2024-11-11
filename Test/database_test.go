@@ -3,18 +3,18 @@ package main_test
 import (
 	"database/sql"
 	"fmt"
+	"os"
 	"strings"
 	"testing"
 
 	"golang.org/x/exp/slices"
 
-	"github.com/sajad-dev/go-framwork/Config/setting"
 	"github.com/sajad-dev/go-framwork/Database/migration"
 	testutils "github.com/sajad-dev/go-framwork/Test-Utils"
 )
 
 func TestMigrationTables(t *testing.T) {
-	var db, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", setting.USERNAME, setting.PASSWORD, setting.IP, setting.PORT, setting.DATABASE))
+	var db, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", os.Getenv("USERNAME_DB"), os.Getenv("PASSWORD_DB"), os.Getenv("IP_DB"), os.Getenv("PORT_DB"), os.Getenv("DATABASE_DB")))
 	if err == nil {
 		qu, err := db.Query("SHOW TABLES")
 		if err != nil {
@@ -40,7 +40,7 @@ func TestMigrationTables(t *testing.T) {
 }
 
 func TestMigrationTablesParams(t *testing.T) {
-	var db, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", setting.USERNAME, setting.PASSWORD, setting.IP, setting.PORT, setting.DATABASE))
+	var db, err = sql.Open("mysql", fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", os.Getenv("USERNAME_DB"), os.Getenv("PASSWORD_DB"), os.Getenv("IP_DB"), os.Getenv("PORT_DB"), os.Getenv("DATABASE_DB")))
 	if err != nil {
 		table, function := testutils.MiggarionListAppend()
 

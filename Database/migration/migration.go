@@ -4,17 +4,18 @@ import (
 	"bytes"
 	"database/sql"
 	"fmt"
-	"golang.org/x/exp/slices"
+	"os"
 	"os/exec"
 	"reflect"
 	"regexp"
+
+	"golang.org/x/exp/slices"
 
 	// "regexp"
 	"strings"
 
 	// "database/sql"
 
-	"github.com/sajad-dev/go-framwork/Config/setting"
 	"github.com/sajad-dev/go-framwork/Database/connection"
 	"github.com/sajad-dev/go-framwork/Exception/exception"
 )
@@ -76,7 +77,7 @@ func checkDeletedTable() {
 }
 func HandelCheckTable() {
 
-	database := setting.DATABASE
+	database := os.Getenv("DATABASE_DB")
 	checkDeletedTable()
 
 
@@ -220,7 +221,7 @@ func CreateTable(function string, table string) {
 }
 
 func DropTable() {
-	database := setting.DATABASE
+	database := os.Getenv("DATABASE_DB")
 	sql := fmt.Sprintf(` 
 SELECT table_name
 FROM information_schema.tables 

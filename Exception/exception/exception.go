@@ -5,15 +5,16 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"runtime"
 
 	"github.com/fatih/color"
-	"github.com/sajad-dev/go-framwork/Config/setting"
+	"github.com/sajad-dev/go-framwork/App/helpers"
 )
 
 func Response500(w http.ResponseWriter, exception string) {
 	_, file, line, ok := runtime.Caller(1)
-	if setting.DEBUG {
+	if helpers.IfThenElse(os.Getenv("DEBUG") == "true", true, false).(bool) {
 		res := fmt.Sprintf("Error occurred in %s:%d - %s", file, line, exception)
 		json.NewEncoder(w).Encode(CustomError{Message: res, Code: 500, Status: false})
 
@@ -31,7 +32,7 @@ func Response500(w http.ResponseWriter, exception string) {
 
 func Response405(w http.ResponseWriter) {
 	_, file, line, ok := runtime.Caller(1)
-	if setting.DEBUG {
+	if helpers.IfThenElse(os.Getenv("DEBUG") == "true", true, false).(bool) {
 		res := fmt.Sprintf("Error occurred in %s:%d - %s", file, line, "Method Not Allowed")
 		json.NewEncoder(w).Encode(CustomError{Message: res, Code: 500, Status: false})
 
@@ -55,10 +56,12 @@ func Response404(w http.ResponseWriter) {
 
 func Log(err error) {
 	if err != nil {
-		if !setting.DEBUG {
+		_, file, line, _ := runtime.Caller(1)
+		if !helpers.IfThenElse(os.Getenv("DEBUG") == "true", true, false).(bool) {
 			log.Panicln(err)
 		} else {
-			color.Red(err.Error())
+			erro := fmt.Sprintf("%s - line %d - file %s",err.Error(),line,file)
+			color.Red(erro)
 		}
 	}
 }

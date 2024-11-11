@@ -5,16 +5,17 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"log"
+	"os"
 	"regexp"
 
-	"github.com/sajad-dev/go-framwork/Config/setting"
+	"github.com/sajad-dev/go-framwork/App/helpers"
 	"github.com/sajad-dev/go-framwork/Exception/exception"
 )
 
 func IsValid(str string) bool {
 	validate := regexp.MustCompile("^[a-zA-Z0-9_]+$")
 	if !validate.MatchString(str) {
-		if !setting.DEBUG {
+		if !helpers.IfThenElse(os.Getenv("DEBUG") == "true", true, false).(bool) {
 			log.Panicln("Not a valid string")
 		}
 		return false
@@ -38,3 +39,4 @@ func HashPassword(password string) string {
 	pass := hash.Sum(nil)
 	return base64.StdEncoding.EncodeToString(pass)
 }
+
