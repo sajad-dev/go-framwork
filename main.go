@@ -15,10 +15,8 @@ import (
 	"github.com/sajad-dev/go-framwork/Route/api"
 	"github.com/sajad-dev/go-framwork/Route/command"
 )
-
-func main() {
-
-	godotenv.Load(".env")
+func Load()  {
+		godotenv.Load(".env")
 
 	file, _ := os.OpenFile("app.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)

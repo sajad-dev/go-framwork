@@ -1,4 +1,4 @@
-package main
+package serve
 
 import (
 	"bufio"
@@ -16,7 +16,7 @@ var mu sync.Mutex
 
 var addr string
 
-func main() {
+func Serve() {
 
 	getAddress()
 
