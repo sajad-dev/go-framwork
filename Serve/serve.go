@@ -47,6 +47,7 @@ func runTest() {
 
 func getAddress() {
 	ou := exec.Command("pwd")
+	
 	adderss, _ := ou.Output()
 	addr = strings.TrimSpace(string(adderss))
 }
