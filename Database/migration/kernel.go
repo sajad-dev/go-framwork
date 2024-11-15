@@ -1,4 +1,4 @@
 package migration
 
-type MigrationInterface interface {
-}
+// type MigrationInterface interface {
+// }

@@ -16,9 +16,9 @@ var mu sync.Mutex
 
 var addr string
 
-func Serve() {
+func Serve(address string) {
 
-	getAddress()
+	addr = address
 
 	color.Blue("Adress Local : http://127.0.0.1:8000")
 
@@ -45,12 +45,7 @@ func runTest() {
 	}
 }
 
-func getAddress() {
-	ou := exec.Command("pwd")
-	fmt.Println(ou)
-	adderss, _ := ou.Output()
-	addr = strings.TrimSpace(string(adderss))
-}
+
 func Compile() {
 
 	for {
@@ -82,7 +77,7 @@ func Commands() {
 	if err != nil {
 		return
 	}
-
+	
 	output := strings.Split(string(ou), "Changes not staged for commit:")
 	if len(output) > 1 && strings.Contains(output[1], "modified") {
 
@@ -105,11 +100,14 @@ func Run() {
 	color.Red(currentTime.Format("2006/01/02 15:04:05"))
 	killProcess()
 	comandRun := exec.Command("")
+
+	filecompiledarr := strings.Split(addr,"/")
+	filecompiled := filecompiledarr[len(filecompiledarr)-1]
 	if len(os.Args) > 1 {
-		comandRun = exec.Command(addr+"/"+"go-framwork", os.Args[1:]...)
+		comandRun = exec.Command(addr+"/"+filecompiled, os.Args[1:]...)
 
 	} else {
-		comandRun = exec.Command(addr + "/" + "go-framwork")
+		comandRun = exec.Command(addr + "/" + filecompiled)
 
 	}
 	stdout, err := comandRun.StdoutPipe()
